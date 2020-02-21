@@ -26,8 +26,8 @@ double** MatrixMult(double **A, double **B, int n) {
 
   // Return the double pointer
   double **C = new double*[n];
-  for (int i = 0; i < n; ++i) C[i] = new double[n];
   for (int i = 0; i < n; ++i) {
+    C[i] = new double[n];
     for (int j = 0; j < n; ++j) {
       C[i][j] = C_mon[i*n+j];
     }
